@@ -1,0 +1,33 @@
+---
+
+import Header from '../components/Header.astro'
+
+import Footer from '../components/Footer.astro'
+
+interface Props {
+	title: string;
+	description?: string;
+	image?: string;
+}
+
+const { title,description=" Our mission at KeepItClean is to provide expert cleaning services that exceed our customers' expectations, no matter the task at hand. With a track record of over 5 years, we are committed to delivering the highest level of quality and reliability to ensure our customers' satisfaction.", image="./images/logo.png" } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-[#EED8CB]">
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>
+
