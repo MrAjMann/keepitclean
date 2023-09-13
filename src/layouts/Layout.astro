@@ -1,18 +1,35 @@
 ---
 
-import Header from '../components/Header.astro'
-
+import Header from '../components/Navigation/Header.jsx'
+import '../styles/animations.css'
 import Footer from '../components/Footer.astro'
-
+import { getImage } from 'astro:assets';
+import Logo from '../assets/KeepItCleanLogo.svg'
+import PhoneIcon from '../assets/phoneIcon.svg'
 interface Props {
 	title: string;
 	description?: string;
 	image?: string;
 }
 
+const optimisedLogo = await getImage({
+	src:Logo,
+	format:"svg",
+	alt:"Keep It Clean logo",
+	
+})
+const optimisedPhoneIcon = await getImage({
+	src:PhoneIcon,
+	format:"webp",
+	alt:"Phone Icon",
+	class:"aspect-video rounded-2xl object-cover",
+	
+})
+
 const { title,description=" Our mission at KeepItClean is to provide expert cleaning services that exceed our customers' expectations, no matter the task at hand. With a track record of over 5 years, we are committed to delivering the highest level of quality and reliability to ensure our customers' satisfaction.", image="./images/logo.png" } = Astro.props;
 
 ---
+
 
 <!doctype html>
 <html lang="en">
@@ -24,8 +41,8 @@ const { title,description=" Our mission at KeepItClean is to provide expert clea
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-[#EED8CB]">
-		<Header />
+	<body class="bg-[#EED8CB] min-h-screen">
+		<Header  client:load Logo={optimisedLogo.src}  />
 		<slot />
 		<Footer />
 	</body>
