@@ -5,7 +5,7 @@ const MobileMenu = ({ isActive, setIsActive, Logo }) => {
 	return (
 		<>
 			<div
-				className={`lg:hidden bg-[#B68467] fixed w-full flex  z-50 transition-colors ${
+				className={`md:hidden bg-[#B68467] fixed w-full flex  z-50 transition-colors ${
 					isActive ? "opacity-85" : "opacity-80"
 				}`}
 			>

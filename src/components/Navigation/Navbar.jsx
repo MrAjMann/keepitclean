@@ -6,7 +6,7 @@ const NavMenu = ({ Logo }) => {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<nav className='w-full'>
+		<nav className='w-full '>
 			<MobileMenu Logo={Logo} isActive={isActive} setIsActive={setIsActive} />
 			<DesktopMenu Logo={Logo} />
 		</nav>
