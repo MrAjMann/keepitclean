@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import MidSectionImage from '../../assets/midsection.png'
+---
+
+
+
+<section class="my-8 lg:my-2">
+    <div class="relative ">
+        <div class="brightness-75">
+
+            <Image src={MidSectionImage} alt="Image of a beautifuly styled lounge rounge" class="w-full max-h-[800px]"/>
+        </div>
+
+        <div class="max-w-md text-center w-full lg:max-w-xl absolute top-2/4  lg:top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4">
+            <h2 class="text-2xl lg:text-4xl text-black font-semibold">We're passionate about cleaning your home</h2>
+            <p class="text-lg lg:text-xl text-gray-200">So we customize our services to meet your requirements</p>
+        </div>
+    </div>
+</section>
