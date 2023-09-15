@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import OutDoorImage from '../../assets/OutdoorFamily.png'
+---
+
+
+<section class="mx-auto h-full lg:my-4 lg:h-3/4">
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-x-8 gap-y-4">
+          <Image src={OutDoorImage} alt='Outdoor Family Settings'  class="hidden lg:block lg:rounded-xl lg:w-[50%] lg:object-cover" />   
+        <div class="mx-8 lg:mx-0 my-8 flex flex-col gap-4 lg:max-w-xl justify-center ">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl text-[#B68467] font-bold"><span class="text-black">Why choose</span> KeepItClean</h1>
+         <div class=" lg:max-w-xl flex flex-col gap-2">
+                <h2 class="mt-4 text-xl  text-[#B47A58] font-medium">High Quality</h2>
+                <div class="w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+                <p class=" text-md  text-gray-600">At our KeepItClean, we understand that every homeowner has unique cleaning needs. That's why we provide customized cleaning services that are tailored to meet those needs and pay close attention to every detail of your home.</p>
+            </div>
+             <div class=" lg:max-w-xl flex flex-col gap-2">
+                <h2 class="mt-4 text-xl  text-[#B47A58] font-medium">Responibility</h2>
+                <div class="w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+                <p class=" text-md  text-gray-600">Our focus is to provide top-notch service to each and every customer. To achieve this, we train our employees to embody the values of Dedication, Responsibility, and Commitment, ensuring that they are fully equipped to deliver exceptional service with every interaction.</p>
+            </div>
+             <div class=" lg:max-w-xl flex flex-col gap-2">
+                <h2 class="mt-4 text-xl  text-[#B47A58] font-medium">Happy Clients</h2>
+                <div class="w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+                <p class=" text-md  text-gray-600">We prioritize our customers' satisfaction above all else. That's why we offer a 100% satisfaction guarantee on all of our services. We also understand the importance of easy communication and scheduling, which is why we have streamlined our processes to make it as simple as possible for our customers to get in touch and schedule their cleaning services.</p>
+            </div>
+        </div>
+     
+             
+    </div>
+</section>
