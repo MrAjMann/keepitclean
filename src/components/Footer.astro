@@ -1,0 +1,145 @@
+---
+import { Image } from "astro:assets";
+import BGImage from "../assets/family-in-livingroom.png";
+import Logo from '../assets/KeepItCleanLogo.svg'
+import GetInTouchCard from "./ui/GetInTouchCard";
+---
+
+<section class='relative '>
+	<div class='relative bg-[#574e49]  pb-8 md:py-0'>
+		<div class='brightness-50  '>
+			<Image
+				src={BGImage}
+				alt='Image of a beautifuly styled lounge rounge'
+				class='w-full max-h-[800px] '
+			/>
+		</div>
+ <GetInTouchCard />
+		<div
+			class='m-auto flex flex-col gap-4 justify-start items-start ml-[10%] sm:w-2/3    lg:w-2/4 lg:absolute lg:top-1/3 lg:left-1/3 lg:-translate-x-2/4 lg:-translate-y-1/4 md:grid md:grid-cols-2 lg:grid-cols-3  '
+		>
+        <!-- Col-One -->
+			<div class="flex flex-col  ">
+                <h4 class='text-white text-xl'>Company Name
+                    <div class="my-2 w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+
+                </h4>
+				<ul class="text-white brightness-90 flex flex-col gap-2 text-lg italic">
+					
+                    <li >
+                        
+                       <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/careers">Careers</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/faq">FAQ's</a>
+                    </li> 
+				</ul>
+			</div>
+
+                    <!-- Col-Two -->
+			<div class="flex flex-col  ">
+                <h4 class='text-white text-xl'>Office Hours
+                    <div class="my-2 w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+
+                </h4>
+				<ul class="text-white brightness-90 flex flex-col gap-2 text-lg italic">
+					
+                    <li >
+                        
+                       <p>Mon-Thurs: 9am-5.30pm</p>
+                    </li>
+                    <li>
+                      
+                        <p>Friday: 9am-4pm</p>
+                    </li>
+                    <li>
+                    
+                       <p>Saturday: 9am-4pm</p>
+                    </li>
+                    <li>
+                       
+                        <p>Sunday: closed</p>
+                    </li> 
+                        <li>
+                        
+                        <p>Public Holidays: closed</p>
+                    </li> 
+				</ul>
+			</div>
+			  <!-- Col-One -->
+			<div class="flex flex-col   ">
+                <h4 class='text-white text-xl'>Useful Links
+                    <div class="my-2 w-16 bg-[#DBBBA7] h-1 rounded-lg"/>
+
+                </h4>
+				<ul class="text-white brightness-90 flex flex-col gap-2 text-lg italic">
+					
+                    <li >
+                        
+                       <a href="/about">One Time Cleans</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/careers">Schedualed Cleans</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/bond">Bond Cleans</a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="/garden">Garden Services</a>
+                    </li> 
+                        <li>
+                        <!-- ScrollTo -->
+                        <a href="/testimonials">Testimonials</a>
+                    </li> 
+				</ul>
+			</div>
+
+            <!-- Bottom section -->
+            		<div class="flex flex-col my-0 :my-16  ">
+                <ul class="text-white brightness-90 flex flex-col gap-2 text-md italic">
+                    <Image src={Logo} alt="Logo" class="w-28 -my-4"/>
+					
+                    <li >
+                        
+                     <p>2 Treesdale ct</p>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <p>Toowoomba, QLD, 4350</p>
+                    </li>
+                    <li>
+                       
+                        <a
+                        class='cursor-pointer '
+                        href='tel:+61469655551'
+                    >
+                        {/* <img src={PhoneIcon} height={30} width='24' /> */}
+                        0469655551
+                    </a>
+                    </li>
+                    <li>
+                        <!-- ScrollTo -->
+                        <a href="mailto:cleaners@keepitclean.com">cleaners@keepitclean.com</a>
+                    </li> 
+                   
+				</ul>
+			</div>
+		</div>
+
+		
+		
+	</div>
+   
+</section>

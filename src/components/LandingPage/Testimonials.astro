@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import TestimonialCard from "../ui/TestimonialCard.astro";
+import TestimonialImageOne from '../../assets/TestimonialImageOne.webp'
+import TestimonialImageTwo from '../../assets/heroImage.png'
+---
+
+<section class="bg-[#B68467] ">
+    <div class="max-w-7xl w-full m-auto">
+
+        <div class='flex  items-center xl:flex-row justify-center gap-0  '>
+            <TestimonialCard
+            src={TestimonialImageOne}
+            title='Michele W, Toowoomba'
+            body={"“Our cleaner does a wonderful job every time, I really enjoy coming home after she’s been in!”"}
+            />
+            
+        </div>
+    </div>
+</section>

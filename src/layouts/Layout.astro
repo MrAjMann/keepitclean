@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro'
 import { getImage } from 'astro:assets';
 import Logo from '../assets/KeepItCleanLogo.svg'
 import PhoneIcon from '../assets/phoneIcon.svg'
+import Testimonials from '../components/LandingPage/Testimonials.astro';
 interface Props {
 	title: string;
 	description?: string;
@@ -44,6 +45,7 @@ const { title,description=" Our mission at KeepItClean is to provide expert clea
 	<body class="bg-[#EED8CB] ">
 		<Header  client:load Logo={optimisedLogo.src}  />
 		<slot />
+		<Testimonials />
 		<Footer />
 	</body>
 </html>

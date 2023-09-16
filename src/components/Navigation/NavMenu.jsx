@@ -34,7 +34,7 @@ const NavMenu = () => {
 			animate='enter'
 			exit='exit'
 			initial='initial'
-			className='fixed w-full right-0 text-white bg-[#B68467] '
+			className='fixed w-full right-0 text-white bg-[#B68467]  '
 		>
 			<div className='p-10 justify-center flex '>
 				<div className='flex flex-col text-3xl '>

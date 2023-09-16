@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+	title: string;
+	body: string;
+	
+	src: any;
+	
+}
+
+
+
+const {  title, body, src} = Astro.props;
+---
+
+
+<li class=`list-none xl:my-8 flex flex-col justify-center items-center xl:flex-row gap-4 xl:gap-16 my-8 py-12`>
+	<div class="" > 
+
+		<Image src={src} alt="Image of HKL Studio" class=" aspect-square w-36 max-w-[14rem] rounded-full lg:rounded-md " >
+	</div>
+	<div class="flex flex-col justify-center align-middle items-center lg:items-start max-w-2xl px-4 xl:px-0 "> 	
+
+		<!-- <div class="w-16 bg-[#DBBBA7] h-1 rounded-lg"/> -->
+		<p class="my-4 font-normal text-xl text-[#3F3732]">
+			{body}
+		</p>
+		<h2 class="text-white font-light text-md italic">
+			{title}
+		</h2>
+		
+	</div>
+</li>
