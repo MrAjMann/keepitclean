@@ -5,7 +5,7 @@ const MobileMenu = ({ isActive, setIsActive, Logo }) => {
 	return (
 		<>
 			<div
-				className={`md:hidden bg-[#B68467] fixed w-full flex  z-50 transition-colors ${
+				className={` md:hidden bg-[#B68467] fixed w-full flex  z-50 transition-colors ${
 					isActive ? "opacity-100" : "opacity-100"
 				}`}
 			>
@@ -24,10 +24,10 @@ const MobileMenu = ({ isActive, setIsActive, Logo }) => {
 						}}
 						className={`${"button "} `}
 					>
-						<div
+						<button
 							id='nav-icon'
 							className={` ${"burger"} ${isActive ? "burgerActive" : ""}`}
-						></div>
+						></button>
 					</div>
 				</div>
 				<AnimatePresence mode='wait'>{isActive && <NavMenu />}</AnimatePresence>
